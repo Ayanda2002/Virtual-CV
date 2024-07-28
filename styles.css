@@ -24,3 +24,9 @@ body.dark-mode {
     background-color: var(--background-color-dark);
     color: var(--text-color-dark);
 }
+
+.profile-img {
+    width: 350px;
+    height: 250px;
+    border-radius: 10%;
+}
