@@ -60,6 +60,12 @@ h1, h2 {
     font-size: 2em;
 }
 
+h3 {
+    color: var(--primary-color);
+    font-size: 1em;
+    font-style: italic;
+}
+
 button {
     background-color: var(--primary-color);
     color: var(--text-color-dark);
