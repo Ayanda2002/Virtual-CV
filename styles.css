@@ -114,3 +114,21 @@ footer {
     margin: 20px;
     border-radius: 45px;  
 }
+
+.circular-progress svg {
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+}
+
+.circular-progress circle {
+    fill: none;
+    stroke-width: 10;
+    r: 50;
+    cx: 60;
+    cy: 60;
+}
+
+.circular-progress .background-circle {
+    stroke: var(--secondary-color);
+}
