@@ -147,3 +147,9 @@ footer {
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
 }
+
+.circular-progress .progress-circle {
+    stroke: var(--primary-color);
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314; 
+}
