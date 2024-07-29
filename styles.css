@@ -127,6 +127,7 @@ footer {
     r: 50;
     cx: 60;
     cy: 60;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .circular-progress .background-circle {
@@ -140,4 +141,9 @@ footer {
     transform: translate(-50%, -50%);
     font-size: 1.2em;
     color: var(--primary-color);
+}
+
+.circular-progress:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
 }
