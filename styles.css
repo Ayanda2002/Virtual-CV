@@ -95,3 +95,9 @@ footer {
     padding: 20px;
 }
 
+.skill {
+    margin: 20px 0;
+    text-align: center;
+    flex: 1 1 200px;
+}
+
