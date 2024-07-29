@@ -132,3 +132,12 @@ footer {
 .circular-progress .background-circle {
     stroke: var(--secondary-color);
 }
+
+.circular-progress .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    color: var(--primary-color);
+}
