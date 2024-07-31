@@ -38,8 +38,9 @@ body.dark-mode {
 }
 
 .profile-img {
-    width: 350px;
-    height: 250px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
     border-radius: 10%;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
@@ -72,9 +73,6 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 20px;
     font-size: 1em;
     border-radius: 50px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
@@ -84,6 +82,28 @@ button:hover {
     background-color: #4a2a54;
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(255, 105, 180, 0.8); 
+}
+
+header button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    header button {
+        position: relative;
+        right: 0;
+        top: 0;
+        margin-top: 20px;
+    }
 }
 
 a {
