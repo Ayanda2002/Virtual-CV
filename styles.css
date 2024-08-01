@@ -38,9 +38,8 @@ body.dark-mode {
 }
 
 .profile-img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
+    width: 350px;
+    height: 250px;
     border-radius: 10%;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
@@ -67,43 +66,51 @@ h3 {
     font-style: italic;
 }
 
-button {
-    background-color: var(--primary-color);
-    color: var(--text-color-dark);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1em;
-    border-radius: 50px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-button:hover {
-    background-color: #4a2a54;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8); 
-}
-
-header button {
+.switch {
     position: absolute;
     right: 20px;
     top: 20px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
-@media (max-width: 768px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-    }
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
 
-    header button {
-        position: relative;
-        right: 0;
-        top: 0;
-        margin-top: 20px;
-    }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
 }
 
 a {
