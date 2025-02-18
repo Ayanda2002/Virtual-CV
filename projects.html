@@ -141,7 +141,7 @@
 			// Check local storage for user preference
 			if (localStorage.getItem("theme") === "dark") {
 				body.classList.add("dark-mode");
-				toggleButton.textContent = "☀️";  // Sun icon for light mode
+				toggleButton.textContent = "☀️";  
 			}
 		
 			toggleButton.addEventListener("click", function () {
@@ -149,10 +149,10 @@
 		
 				if (body.classList.contains("dark-mode")) {
 					localStorage.setItem("theme", "dark");
-					toggleButton.textContent = "☀️";  // Switch to light mode
+					toggleButton.textContent = "☀️";  
 				} else {
 					localStorage.setItem("theme", "light");
-					toggleButton.textContent = "🌙";  // Switch to dark mode
+					toggleButton.textContent = "🌙";  
 				}
 			});
 		});
