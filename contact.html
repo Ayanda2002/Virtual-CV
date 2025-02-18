@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Virtual CV">
+	<meta name="author" content="Ayanda Mqomo">
+	<title>Contact</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="shortcut icon" href="images/letter-a.png" type="image/x-icon">
+	<link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+	<header>
+		<div class="main-bar">
+			<button id="theme-toggle" class="theme-toggle">🌙</button>
+			<div class="logo">
+				<a href="home.html">
+					<img src="images/letter-a.png" alt="Image of myself">
+				</a>
+				<div class="label">
+					<a href="home.html">
+						<h1>Ayanda Mqomo</h1>
+						<p>Prospective Software Engineer</p>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="about_me.html">About Me</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="skills.html">Skills</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<div class="contacts">
+			<div class="column">
+				<img src="images/phone.png" alt="phone" style="height: 200px;">
+				<h3>Call</h3>
+				<p>Have any questions or want to discuss a project? Feel free to give me a call. I'm always open to meaningful conversations and collaboration.</p>
+        		<a href="tel:+27839383500">📞 083-938-3500</a>
+			</div>
+			<div class="column">
+				<img src="images/email(1).png" alt="phone" style="height: 200px;">
+				<h3>Email</h3>
+				<p>Got an idea, feedback, or just want to say hi? Drop me an email, and I'll get back to you as soon as possible. Let's keep the conversation going!</p>
+        		<a href="mailto:ayanda2002mqomo@gmail.com">📬 ayanda2002mqomo@gmail.com</a>
+			</div>
+			<div class="column">
+				<img src="images/linkedin(1).png" alt="phone" style="height: 200px;">
+				<h3>LinkedIn</h3>
+				<p>Stay connected with me on LinkedIn to explore professional opportunities, share insights, and grow together in the world of technology and innovation.</p>
+        		<a href="https://www.linkedin.com/in/ayanda-mqomo-384194234" target="_blank">🔗 My LinkedIn Profile</a>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer-bar">
+			<div class="links">
+				<div class="link">
+					<h3>Explore</h3>
+					<a href="about_me.html">About</a>
+                    <a href="skills.html">Skills</a>
+				</div>
+				<div  class="link">
+					<h3>Projects</h3>
+					<a href="projects.html">My Work</a>
+				</div class="contact">
+				<div class="link">
+					<h3>Contact</h3>
+					<a href="mailto:ayanda2002mqomo@gmail.com">Email</a>
+				</div>
+			</div>
+			<div class="social-icons">
+				<a href="https://www.linkedin.com/in/ayanda-mqomo-384194234" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                </a>
+				<a href="https://github.com/Ayanda2002" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+                </a>
+                <a href="mailto:ayanda2002mqomo@gmail.com">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+                </a>
+			</div>
+			<div class="copyrights">
+				<p class="copyright">© 2024 Ayanda Mqomo. All Rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const toggleButton = document.getElementById("theme-toggle");
+			const body = document.body;
+		
+			// Check local storage for user preference
+			if (localStorage.getItem("theme") === "dark") {
+				body.classList.add("dark-mode");
+				toggleButton.textContent = "☀️";  // Sun icon for light mode
+			}
+		
+			toggleButton.addEventListener("click", function () {
+				body.classList.toggle("dark-mode");
+		
+				if (body.classList.contains("dark-mode")) {
+					localStorage.setItem("theme", "dark");
+					toggleButton.textContent = "☀️";  // Switch to light mode
+				} else {
+					localStorage.setItem("theme", "light");
+					toggleButton.textContent = "🌙";  // Switch to dark mode
+				}
+			});
+		});
+	</script>
+</body>
+</html>

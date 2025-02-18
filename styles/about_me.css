@@ -1,0 +1,53 @@
+main{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.heading h1{
+	font-size: 50px;
+	background: linear-gradient(to right, #ff00ff, #7a5eff);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	margin: 20px;
+}
+
+.sub-sections{
+	display: flex;
+	flex-direction: column;
+	gap: 40px;	
+	align-items: center;
+}
+
+.sub-section{
+	display: flex;
+	align-items: center;
+	box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+	height: 200px;
+	width: 95%;
+	cursor: default;
+	transition: transform 0.3s ease-in-out;
+}
+
+.sub-section:hover{
+    transform: scale(1.05);
+}
+
+.sub-section h2{
+	font-size: 40px;
+	width: 250px;
+	background: linear-gradient(to right, #ff00ff, #7a5eff);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	padding: 10px;
+}
+
+.sub-section p{
+	width: 90%;
+	font-size: 20px;
+}
+
+.sub-section p a{
+	text-decoration: none;
+}

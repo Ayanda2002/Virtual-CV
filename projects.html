@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Virtual CV">
+	<meta name="author" content="Ayanda Mqomo">
+	<title>Projects</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="shortcut icon" href="images/letter-a.png" type="image/x-icon">
+	<link rel="stylesheet" href="styles/projects.css">
+</head>
+<body>
+	<header>
+		<div class="main-bar">
+			<button id="theme-toggle" class="theme-toggle">🌙</button>
+			<div class="logo">
+				<a href="home.html">
+					<img src="images/letter-a.png" alt="Image of myself">
+				</a>
+				<div class="label">
+					<a href="home.html">
+						<h1>Ayanda Mqomo</h1>
+						<p>Prospective Software Engineer</p>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="about_me.html">About Me</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="skills.html">Skills</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<div class="heading">
+			<h1>Projects</h1>
+		</div>
+		<div class="sub-heading">
+			<h2><em>Personal Projects</em></h2>
+		</div>
+		
+		<div class="skill">
+			<img class="adaptability" src="images/can.png" alt="Adaptability">
+			<p style="color: blueviolet;">Animated Soda Logos:</p>
+			<p>
+				A fun and engaging project where I created animated soda brand logos using CSS animations and JavaScript. This project showcases my ability to work with motion effects and create visually appealing web elements.
+			</p>
+		</div>
+		<div class="skill">
+			<img class="adaptability" src="images/letter-n.png" alt="Adaptability">
+			<p style="color: blueviolet;">Netflix Profile:</p>
+			<p>
+				A Netflix-inspired profile UI built using HTML, CSS, and JavaScript. This project demonstrates my ability to replicate modern user interfaces while maintaining responsiveness and a sleek design.
+			</p>
+		</div>
+		<div class="skill">
+			<img class="adaptability" src="images/card.png" alt="Adaptability">
+			<p style="color: blueviolet;">Responsive Card Profile:</p>
+			<p>
+				A responsive card profile design that adapts to different screen sizes. Built with HTML, CSS, and Flexbox/Grid, this project highlights my skills in responsive web design and modern layout techniques.
+			</p>
+		</div>
+		<div class="skill">
+			<img class="adaptability" src="images/noodle.png" alt="Adaptability">
+			<p style="color: blueviolet;">Yummy Tummy's Frontend:</p>
+			<p>
+				The frontend for a restaurant website, Yummy Tummy, designed using React.js and Tailwind CSS. This project demonstrates my ability to build interactive and dynamic user interfaces while ensuring a smooth user experience.
+			</p>
+		</div>
+		<div class="skill">
+			<img class="adaptability" src="images/cv.png" alt="Adaptability">
+			<p style="color: blueviolet;">Virtual CV:</p>
+			<p>
+				A virtual CV website designed to present my skills, experience, and projects in an interactive format. Built with HTML, CSS, and JavaScript, it reflects my web development expertise and personal branding efforts.
+			</p>
+		</div>
+
+		<div class="sub-heading">
+			<h2><em>Collaborative Projects</em></h2>
+		</div>
+
+		<div class="skill">
+			<img class="communication" src="images/website-codes.png" alt="Effective Communication">
+			<p style="color: blueviolet;">Share2Teach:</p>
+			<p>
+				Share2Teach is an open educational resource platform that allows users to contribute, search, and review learning materials. Built with Django, PostgreSQL, AWS, React, and Node.js, this project showcases my experience in full-stack web development and cloud integration.
+			</p>
+			</p>
+		</div>
+		<div class="skill">
+			<img class="communication" src="images/noodle.png" alt="Effective Communication">
+			<p style="color: blueviolet;">Yummy Tummy's:</p>
+			<p>
+				A full-stack food ordering web application developed collaboratively. The project includes user authentication, menu browsing, and order processing, built using React.js for the frontend and Django for the backend.
+			</p>
+		</div>
+	</main>
+	<footer>
+		<div class="footer-bar">
+			<div class="links">
+				<div class="link">
+					<h3>Explore</h3>
+					<a href="about_me.html">About</a>
+                    <a href="skills.html">Skills</a>
+				</div>
+				<div  class="link">
+					<h3>Projects</h3>
+					<a href="projects.html">My Work</a>
+				</div class="contact">
+				<div class="link">
+					<h3>Contact</h3>
+					<a href="mailto:ayanda2002mqomo@gmail.com">Email</a>
+				</div>
+			</div>
+			<div class="social-icons">
+				<a href="https://www.linkedin.com/in/ayanda-mqomo-384194234" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                </a>
+				<a href="https://github.com/Ayanda2002" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+                </a>
+                <a href="mailto:ayanda2002mqomo@gmail.com">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+                </a>
+			</div>
+			<div class="copyrights">
+				<p class="copyright">© 2024 Ayanda Mqomo. All Rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const toggleButton = document.getElementById("theme-toggle");
+			const body = document.body;
+		
+			// Check local storage for user preference
+			if (localStorage.getItem("theme") === "dark") {
+				body.classList.add("dark-mode");
+				toggleButton.textContent = "☀️";  // Sun icon for light mode
+			}
+		
+			toggleButton.addEventListener("click", function () {
+				body.classList.toggle("dark-mode");
+		
+				if (body.classList.contains("dark-mode")) {
+					localStorage.setItem("theme", "dark");
+					toggleButton.textContent = "☀️";  // Switch to light mode
+				} else {
+					localStorage.setItem("theme", "light");
+					toggleButton.textContent = "🌙";  // Switch to dark mode
+				}
+			});
+		});
+	</script>
+</body>
+</html>
